@@ -29,10 +29,20 @@ services:
     rabbitmq:
         image: rabbitmq:3.10.2
         ports:
+            - 127.0.0.1:4369:4369
             - 127.0.0.1:5672:5672
+            - 127.0.0.1:25672:25672
+            - 127.0.0.1:15672:15672
         environment:
             RABBITMQ_DEFAULT_USER: guest
             RABBITMQ_DEFAULT_PASS: guest
+    flower:
+        image: mher/flower:0.9.7
+        ports:
+            - 127.0.0.1:5555:5555
+        environment:
+            CELERY_BROKER_URL: "ampq://guest:guest@rabbitmq//"
+            CELERY_RESULT_BACKEND: redis://redis:6379/7
     localstack:
         image: localstack/localstack:latest
         ports:
