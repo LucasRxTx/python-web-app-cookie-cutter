@@ -8,22 +8,14 @@ This repo uses [Cookiecutter](https://github.com/cookiecutter/cookiecutter) to c
 
 1. Install cookiecutter
 
-    pip3 install --user cookiecutter
+        pip3 install --user cookiecutter
 
-2. Clone this repository
+2. Navigate to where you want your new project to be
 
-    git clone https://github.com/LucasRxTx/python-web-app-cookiecutter.git
+3. Create a the new project from the cookiecutter, and follow the prompts.
 
-3. Navigate to where you want your new project to be
+        cookiecutter https://github.com/LucasRxTx/python-web-app-cookiecutter.git
 
-4. Create a the new project from the cookiecutter, and follow the prompts.
+4. Navigate to the new project directory.
 
-    cookiecutter /path/to/where/you/cloned/python-web-app-cookiecutter
-
-5. Navigate to the new project directory.
-
-6. Initiate a git repository
-
-    git init
-
-7. Push the new code to the remote repo
+5. Push the new code to a shinny new repo
