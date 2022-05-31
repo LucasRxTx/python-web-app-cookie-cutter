@@ -1,0 +1,10 @@
+{
+    "directory_name": "src",
+    "app_name": "default_name",
+    "app_title": "default_title",
+    "server_name": "www.localhost.com",
+    "app_port": "5000",
+    "python_version": "3.9",
+    "docker_app_user": "app",
+    "docker_app_group": "app"
+}
